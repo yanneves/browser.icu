@@ -5,7 +5,7 @@
 # Browser.icu
 
 **Supercharged Chat-based Problem Solving**  
-Control the web's most powerful autonomous browser agents. Browser helps you solve mundane tasks with an intuitive chat based based user interface.
+Control the web's most powerful autonomous browser agents. Browser helps you solve mundane tasks with an intuitive chat based user interface.
 
 # Links
 
