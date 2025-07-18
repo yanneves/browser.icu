@@ -28,7 +28,7 @@
     "@types/pg": "^8.15.4",
     "@types/ws": "^8.18.1",
     "eslint": "^9.31.0",
-    "eslint-config-prettier": "^10.1.5",
+    "eslint-config-prettier": "^10.1.7",
     "globals": "^16.3.0",
     "prettier": "^3.6.2",
     "typescript": "^5.8.3",
