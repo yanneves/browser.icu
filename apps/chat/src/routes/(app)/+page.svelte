@@ -98,7 +98,7 @@
         class:min-h-24={expanded}
         class:px-6={expanded}
         class:pt-4={expanded}
-        contenteditable
+        contenteditable="plaintext-only"
         bind:textContent={prompt}
         bind:this={input}
         onkeydown={enter}

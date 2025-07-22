@@ -209,7 +209,7 @@
     >
       <p
         class="text-text-400 relative block max-h-32 min-h-16 max-w-full overflow-hidden overflow-y-auto px-6 py-4 break-words focus:outline-hidden"
-        contenteditable
+        contenteditable="plaintext-only"
         bind:textContent={prompt}
         onkeydown={enter}
       ></p>
