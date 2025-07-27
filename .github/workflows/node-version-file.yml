@@ -1,0 +1,67 @@
+name: Node Version File
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  update-nvmrc:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get current Node version
+        id: current_version
+        run: echo "version=$(cat .nvmrc)" >> "$GITHUB_OUTPUT"
+
+      - name: Get latest LTS Node version
+        id: lts_version
+        run: |
+          version=$(curl -s https://nodejs.org/download/release/index.json | jq -r '[.[] | select(.lts != false)][0].version')
+          echo "version=${version}" >> "$GITHUB_OUTPUT"
+
+      - name: Create pull request
+        if: steps.current_version.outputs.version != steps.lts_version.outputs.version
+        run: |
+          # Configure git user
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          # Create a new branch
+          PR_BRANCH="chore/update-node-lts-$TO"
+          git checkout -b ${PR_BRANCH}
+
+          # Update the .nvmrc file
+          echo "$TO" > .nvmrc
+
+          # Commit the changes
+          git add .nvmrc
+          PR_COMMIT="chore(deps): Bump Node version from $FROM to $TO"
+          git commit -m "$PR_COMMIT"
+
+          # Push the new branch
+          git push -u origin ${PR_BRANCH}
+
+          # Define the pull request body
+          PR_BODY=$(cat <<EOF
+            This PR updates the Node version in `.nvmrc` from `$FROM` to `$TO`.
+            - https://github.com/nodejs/node/releases/tag/$TO
+            - https://github.com/nodejs/node/compare/$FROM...$TO
+          EOF)
+
+          gh pr create \
+            --title "$PR_COMMIT" \
+            --body "$PR_BODY" \
+            --base ${{ github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FROM: ${{ steps.current_version.outputs.version }}
+          TO: ${{ steps.lts_version.outputs.version }}
