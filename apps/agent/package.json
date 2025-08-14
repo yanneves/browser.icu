@@ -12,7 +12,7 @@
     "start": "tsx ."
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.59.0",
+    "@anthropic-ai/sdk": "^0.60.0",
     "@aws-sdk/client-s3": "^3.864.0",
     "pg": "^8.16.3",
     "playwright": "~1.54.2",
