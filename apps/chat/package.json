@@ -16,7 +16,7 @@
   "devDependencies": {
     "@fontsource-variable/inter": "^5.2.6",
     "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
-    "@iconify-json/lucide": "^1.2.65",
+    "@iconify-json/lucide": "^1.2.66",
     "@iconify-json/material-symbols": "^1.2.33",
     "@iconify-json/svg-spinners": "^1.2.4",
     "@iconify/tailwind": "^1.2.0",
@@ -38,7 +38,7 @@
     "prettier-plugin-tailwindcss": "^0.6.14",
     "svelte": "^5.38.6",
     "tailwindcss": "^4.0.3",
-    "vite": "^7.1.3",
+    "vite": "^7.1.4",
     "wrangler": "^4.33.1"
   },
   "engines": {
