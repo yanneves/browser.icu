@@ -1,6 +1,10 @@
+<script>
+  import { resolve } from "$app/paths";
+</script>
+
 <article class="relative mx-auto max-w-3xl bg-zinc-300 py-12 text-zinc-900">
   <section class="prose mx-auto max-w-prose">
-    <a href="/" class="flex items-center text-zinc-700">
+    <a href={resolve("/")} class="flex items-center text-zinc-700">
       <i class="iconify lucide--arrow-big-left"></i>
       Return home
     </a>

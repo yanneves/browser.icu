@@ -1,4 +1,5 @@
 <script>
+  import { resolve } from "$app/paths";
   import { page } from "$app/state";
   import Shell from "$lib/components/Shell.svelte";
   import { SvelteSet } from "svelte/reactivity";
@@ -176,7 +177,7 @@
         >
           <li class="px-4">
             <a
-              href="/"
+              href={resolve("/")}
               class="border-bg-200 bg-bg-100 text-text-200 hover:text-blaze-300 hover:border-blaze-300 focus:border-blaze-300 focus:text-blaze-300 flex items-center gap-x-4 rounded-2xl border-2 border-dashed p-4 text-sm focus:outline-hidden"
             >
               <i class="iconify material-symbols--add size-6"></i>
@@ -187,7 +188,7 @@
             <li class="px-4" out:slide={{ duration: 150 }}>
               <a
                 {id}
-                href="/replay/{id}"
+                href={resolve("/replay/[id]", { id })}
                 aria-current={page.params?.id === id ? "page" : null}
                 class="text-text-200 focus:ring-blaze-300 hover:bg-bg-100 focus:bg-bg-100 aria-[current=page]:bg-bg-100 block rounded-2xl p-2 text-sm font-light focus:ring-2 focus:outline-hidden"
                 onclick={handleReplaySelection}
