@@ -1,1 +1,1 @@
-export { default } from "./agents/claude-4-sonnet.ts";
+export { default } from "./agents/claude-4-5-sonnet.ts";
