@@ -311,12 +311,15 @@
             >{current_persona}</span
           >
           <i
-            class={`iconify ${isPersonaDropdownOpen ? "lucide--chevron-up" : "lucide--chevron-down"} text-primary size-5`}
+            class={[
+              "iconify text-primary size-5",
+              isPersonaDropdownOpen ? "mdi--chevron-up" : "mdi--chevron-down",
+            ]}
           ></i>
         </button>
 
         {#if isPersonaDropdownOpen}
-          <div class="mt-2 divide-y border">
+          <div class="divide-border border-border mt-2 divide-y border">
             {#each contents as persona (persona.identity.Name)}
               {#if persona.identity.Name !== current_persona}
                 <button
@@ -328,7 +331,7 @@
                   }}
                 >
                   <enhanced:img
-                    class="w-20 border-r grayscale"
+                    class="border-r-border w-20 border-r grayscale"
                     alt={`Switch to ${persona.identity.Name}`}
                     src={persona.avatar_img}
                   />
@@ -364,14 +367,14 @@
               <div class="bg-primary absolute top-0 left-0 h-3 w-3"></div>
             {:else}
               <div
-                class="border-foreground-alt absolute top-0 left-0 h-3 w-3 border-r border-b opacity-40"
+                class="border-border absolute top-0 left-0 h-3 w-3 border-r border-b opacity-40"
               ></div>
             {/if}
           </button>
         {/each}
       </div>
 
-      <div class="border-foreground border">
+      <div class="border-border border">
         <p class="font-michroma hidden p-4 sm:block">
           {active_persona_data.identity.Name}
         </p>
@@ -385,23 +388,28 @@
           >
             <span class="font-medium">{current_tab}</span>
             <i
-              class={`iconify ${isDropdownOpen ? "lucide--chevron-up" : "lucide--chevron-down"} size-5 text-black`}
+              class={[
+                "iconify text-background size-4",
+                isDropdownOpen ? "mdi--chevron-down" : "mdi--chevron-up",
+              ]}
             ></i>
           </button>
 
           {#if isDropdownOpen}
-            <div class="border-t">
+            <div class="border-t-border border-t">
+              <p class="text-foreground/40 p-4 pb-0 text-sm">Select category</p>
               {#each ["Identity", "Psychology", "Value Map", "Vocational", "Success Criteria"] as tab (tab)}
                 {#if tab !== current_tab}
                   <button
                     type="button"
-                    class="hover:bg-foreground-alt/20 block w-full p-4 text-left"
+                    class="hover:bg-foreground-alt/20 inline-flex w-full items-center gap-2 p-4 text-left"
                     onclick={() => {
                       ChangeTab(tab);
                       isDropdownOpen = false;
                     }}
                   >
-                    {tab}
+                    <i class="iconify mdi--chevron-right size-4"></i>
+                    <span>{tab}</span>
                   </button>
                 {/if}
               {/each}
@@ -410,7 +418,7 @@
         </div>
 
         <!-- desktop tabs -->
-        <div class="hidden grid-cols-5 divide-x border-t border-b sm:grid">
+        <div class="border-border hidden grid-cols-5 border-t border-b sm:grid">
           {#each ["Identity", "Psychology", "Value Map", "Vocational", "Success Criteria"] as tab (tab)}
             <button
               type="button"
@@ -428,7 +436,7 @@
 
         <div class="p-4">
           {#if current_tab === "Identity"}
-            <ul class="divide-foreground-alt divide-y">
+            <ul class="divide-border divide-y">
               {#each Object.entries(active_persona_data.identity) as [key, value] (key)}
                 <li class="flex items-center justify-between py-4">
                   <p class="text-foreground-alt">{key}</p>
@@ -438,7 +446,7 @@
             </ul>
           {/if}
           {#if current_tab === "Psychology"}
-            <ul class="divide-foreground-alt divide-y">
+            <ul class="divide-border divide-y">
               {#each Object.entries(active_persona_data.psychology) as [key, value] (key)}
                 {#if key === "MMPI"}
                   <li class="flex items-center justify-between py-4">
@@ -461,7 +469,7 @@
             </ul>
           {/if}
           {#if current_tab === "Value Map"}
-            <ul class="divide-foreground-alt divide-y">
+            <ul class="divide-border divide-y">
               {#each Object.keys(active_persona_data.value_map) as trait (trait)}
                 <li class="py-4">
                   <p class="text-foreground-alt">{trait}</p>
@@ -475,7 +483,7 @@
             </ul>
           {/if}
           {#if current_tab === "Vocational"}
-            <ul class="divide-foreground-alt divide-y">
+            <ul class="divide-border divide-y">
               {#each Object.entries(active_persona_data.vocational) as [key, value] (key)}
                 <li class="flex items-center justify-between py-4">
                   <p class="text-foreground-alt">{key}</p>
@@ -485,7 +493,7 @@
             </ul>
           {/if}
           {#if current_tab === "Success Criteria"}
-            <ul class="divide-foreground-alt divide-y">
+            <ul class="divide-border divide-y">
               {#each active_persona_data.success_criteria as trait, i (trait)}
                 <li class="flex items-center justify-between py-4">
                   <p class="font-medium">{i + 1}. {trait}</p>

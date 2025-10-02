@@ -1,8 +1,5 @@
 <script>
-  import "@fontsource-variable/inter";
-  import "@fontsource-variable/space-grotesk";
   import "@fontsource/michroma";
-  // 100-900 weight
   import "@fontsource-variable/archivo";
   import "../app.css";
 

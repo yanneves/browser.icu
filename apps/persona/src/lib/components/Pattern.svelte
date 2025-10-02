@@ -22,7 +22,7 @@
 <svg aria-hidden="true" {width} {height} {...rest}>
   <defs>
     <symbol id="{uid}-0" width={size} height={size}>
-      <rect class="fill-orange-500" width={size} height={size} />
+      <rect class="fill-primary" width={size} height={size} />
       <circle
         class="fill-orange-600"
         cx={size / 2}

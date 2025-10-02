@@ -1,3 +1,3 @@
 import { addIconSelectors } from "@iconify/tailwind";
 
-export default addIconSelectors(["logos", "lucide"]);
+export default addIconSelectors(["logos", "mdi"]);

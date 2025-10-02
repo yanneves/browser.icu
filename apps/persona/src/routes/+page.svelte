@@ -8,8 +8,12 @@
   import NavBar from "$lib/components/NavBar.svelte";
   import Traits from "$lib/components/Traits.svelte";
   import Waitlist from "$lib/components/Waitlist.svelte";
+  import HeaderOrnament from "../lib/components/HeaderOrnament.svelte";
 </script>
 
+<div class="border-border mb-14 h-7 overflow-hidden">
+  <HeaderOrnament class="text-foreground-darker/80 -translate-x-4" />
+</div>
 <Hero />
 <HeroOrnament />
 <Introduction />
@@ -19,3 +23,6 @@
 <Waitlist />
 <Creator />
 <Footer />
+<div class="border-border h-7 overflow-hidden border-b">
+  <HeaderOrnament class="text-foreground-darker/80 -translate-x-4" />
+</div>

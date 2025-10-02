@@ -111,7 +111,7 @@
     {/if}
   </nav>
   <div
-    class="hidden sm:flex sm:h-32 sm:justify-center sm:border-b sm:border-zinc-200 sm:bg-zinc-950/95 sm:[@supports(backdrop-filter:blur(0))]:bg-zinc-950/80 sm:[@supports(backdrop-filter:blur(0))]:backdrop-blur-sm"
+    class="border-border sm:bg-background/95 sm:[@supports(backdrop-filter:blur(0))]:bg-background/80 hidden border-b sm:flex sm:h-20 sm:justify-center sm:[@supports(backdrop-filter:blur(0))]:backdrop-blur-sm"
   >
     <ol
       role="list"
@@ -122,7 +122,7 @@
           <a
             href={`#${section.id}`}
             class={[
-              "flex w-full flex-col items-center justify-center border-b-2 before:mb-2 before:font-mono before:text-sm before:content-[counter(section,decimal-leading-zero)]",
+              "flex w-full flex-col items-center justify-center  before:mb-1 before:font-mono before:text-sm before:content-[counter(section,decimal-leading-zero)]",
               sectionIndex === activeIndex
                 ? "text-primary before:text-primary border-primary bg-orange-50"
                 : "border-transparent before:text-zinc-500 hover:bg-orange-50/40 hover:before:text-zinc-100",

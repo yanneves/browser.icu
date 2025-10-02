@@ -1,6 +1,7 @@
 <script>
   import GridPattern from "$lib/components/GridPattern.svelte";
   import SectionHeading from "$lib/components/SectionHeading.svelte";
+  import CornerBracket from "./ui/CornerBracket.svelte";
 </script>
 
 <section
@@ -14,9 +15,9 @@
     <GridPattern x="50%" y="100%" />
   </div>
   <div class="relative mx-auto max-w-5xl pt-16 sm:px-6">
-    <div class="sm:rounded-6xl bg-zinc-950 pt-px">
+    <div class="sm:rounded-6xl border-border/50 border bg-zinc-950 pt-px">
       <div
-        class="relative mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-zinc-800 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72"
+        class="text-primary relative mx-auto -mt-16 h-44 w-44 overflow-hidden border bg-zinc-800 shadow-[8px_8px_var(--color-primary)] md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72"
       >
         <enhanced:img
           class="absolute inset-0 h-full w-full object-cover"
@@ -24,6 +25,8 @@
           alt="Creator bio"
           sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
         />
+        <CornerBracket class="size-12" />
+        <CornerBracket class="size-12" position="bottom-right" />
       </div>
       <div class="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
         <SectionHeading number="5" id="creator-title">Creator</SectionHeading>
@@ -49,15 +52,7 @@
             href="https://x.com/yanniibesu"
             class="inline-flex items-center text-base font-medium tracking-tight text-zinc-100"
           >
-            <svg
-              aria-hidden="true"
-              viewBox="0 0 24 24"
-              class="h-10 w-10 fill-current"
-            >
-              <path
-                d="M13.6823 10.6218L20.2391 3H18.6854L12.9921 9.61788L8.44486 3H3.2002L10.0765 13.0074L3.2002 21H4.75404L10.7663 14.0113L15.5685 21H20.8132L13.6819 10.6218H13.6823ZM11.5541 13.0956L10.8574 12.0991L5.31391 4.16971H7.70053L12.1742 10.5689L12.8709 11.5655L18.6861 19.8835H16.2995L11.5541 13.096V13.0956Z"
-              />
-            </svg>
+            <i class="iconify logos--x size-8"></i>
             <span class="ml-4">Follow on X</span>
           </a>
         </p>
