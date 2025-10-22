@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-@plugin '@tailwindcss/typography';
-@plugin '@tailwindcss/forms';
-@plugin '../tailwind.animation.js';
-@plugin '../tailwind.icons.js';
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+@plugin "../tailwind.animation.js";
+@plugin "../tailwind.icons.js";
 
 @theme {
   --default-font-family: "Inter Variable", sans-serif;

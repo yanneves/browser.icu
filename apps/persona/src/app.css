@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@plugin '../tailwind.icons.js';
+@plugin "../tailwind.icons.js";
 
 /* CUSTOM SCROLLBAR */
 :root {

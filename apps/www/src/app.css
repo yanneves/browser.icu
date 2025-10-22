@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-@plugin '@tailwindcss/typography';
-@plugin '../tailwind.icons.js';
+@plugin "@tailwindcss/typography";
+@plugin "../tailwind.icons.js";
 
 @theme {
   --font-logo: "Inter Variable", sans-serif;
