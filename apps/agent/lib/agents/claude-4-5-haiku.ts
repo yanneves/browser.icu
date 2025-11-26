@@ -2,13 +2,14 @@ import EventEmitter from "node:events";
 import Anthropic from "@anthropic-ai/sdk";
 import {
   chromium,
+  devices,
   type Browser,
   type BrowserContext,
   type Page,
 } from "playwright";
 import * as cursors from "../assets/cursors.svg.ts";
 import xdotoolParse from "../xdotool-parser/index.ts";
-import { withCachedPrompts } from "./claude-4-5-sonnet.utils.ts";
+import { withCachedPrompts } from "./claude-4-5-haiku.utils.ts";
 
 type LaunchOptions = {
   session: string;
@@ -19,7 +20,7 @@ const MAX_STEPS = 512;
 const WXGA_WIDTH = 1280;
 const WXGA_HEIGHT = 800;
 
-const model = "claude-sonnet-4-5-20250929";
+const model: Anthropic.Messages.Model = "claude-sonnet-4-5-20250929";
 const betas = ["computer-use-2025-01-24", "interleaved-thinking-2025-05-14"];
 
 const tools: Anthropic.Beta.BetaToolComputerUse20250124[] = [
@@ -142,6 +143,8 @@ export default class Agent extends EventEmitter {
     });
 
     this._browserContext = await this._browser.newContext({
+      ...devices["Desktop Safari"],
+      recordVideo: { dir: "videos/" },
       viewport: {
         width: WXGA_WIDTH,
         height: WXGA_HEIGHT,
@@ -615,7 +618,7 @@ export default class Agent extends EventEmitter {
       }
 
       if (terminate) {
-        return;
+        return this.terminate();
       }
 
       return this.step(page, count + 1);
@@ -623,6 +626,10 @@ export default class Agent extends EventEmitter {
       // Failure in loop, likely rate limit exceeded, wait and retry
       console.error(`Encountered ${err?.status ?? "Unknown"} error, retrying:`);
       console.error(err?.error.error);
+
+      if (err.status === 400) {
+        return this.terminate();
+      }
 
       await delay(1500);
       return this.step(page, count);
