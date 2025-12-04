@@ -143,7 +143,7 @@ export default class Agent extends EventEmitter {
     });
 
     this._browserContext = await this._browser.newContext({
-      ...devices["Desktop Safari"],
+      ...devices["Desktop Chrome"],
       recordVideo: { dir: "videos/" },
       viewport: {
         width: WXGA_WIDTH,

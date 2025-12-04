@@ -1,7 +1,7 @@
 import { chromium } from "playwright";
 
 const browserServer = await chromium.launchServer({
-  channel: "chromium",
+  channel: "chrome",
   port: +(process.env.PORT || 0),
   wsPath: process.env.PATHNAME || undefined,
   logger: {
