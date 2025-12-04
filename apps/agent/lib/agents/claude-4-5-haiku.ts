@@ -614,7 +614,7 @@ export default class Agent extends EventEmitter {
         this._messages.push({ role: "user", content });
       } catch (err) {
         console.error(err);
-        return;
+        return this.terminate();
       }
 
       if (terminate) {
