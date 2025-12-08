@@ -25,17 +25,17 @@
     "bits-ui": "^2.14.4",
     "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-config-turbo": "^2.6.2",
-    "eslint-plugin-svelte": "^3.13.0",
+    "eslint-config-turbo": "^2.6.3",
+    "eslint-plugin-svelte": "^3.13.1",
     "globals": "^16.5.0",
     "prettier": "^3.7.4",
     "prettier-plugin-svelte": "^3.4.0",
     "prettier-plugin-tailwindcss": "^0.7.2",
-    "svelte": "^5.45.5",
+    "svelte": "^5.45.6",
     "tailwindcss": "^4.1.13",
     "three": "^0.181.2",
-    "vite": "^7.2.6",
-    "wrangler": "^4.52.1"
+    "vite": "^7.2.7",
+    "wrangler": "^4.53.0"
   },
   "engines": {
     "node": "24.x"
