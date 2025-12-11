@@ -13,7 +13,7 @@
     "@fontsource-variable/inter": "^5.2.8",
     "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
     "@iconify-json/logos": "^1.2.10",
-    "@iconify-json/lucide": "^1.2.79",
+    "@iconify-json/lucide": "^1.2.80",
     "@iconify/tailwind": "^1.2.0",
     "@sveltejs/adapter-cloudflare": "^7.2.4",
     "@sveltejs/kit": "^2.49.2",
@@ -32,7 +32,7 @@
     "svelte": "^5.45.8",
     "tailwindcss": "^4.1.13",
     "vite": "^7.2.7",
-    "wrangler": "^4.53.0"
+    "wrangler": "^4.54.0"
   },
   "engines": {
     "node": "24.x"
