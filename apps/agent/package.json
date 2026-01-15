@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
-    "@aws-sdk/client-s3": "^3.968.0",
-    "pg": "^8.16.3",
+    "@aws-sdk/client-s3": "^3.969.0",
+    "pg": "^8.17.1",
     "playwright": "~1.57.0",
     "tsx": "^4.21.0",
     "uuid": "^13.0.0",
