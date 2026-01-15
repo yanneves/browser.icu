@@ -33,13 +33,13 @@
     "eslint-plugin-svelte": "^3.14.0",
     "globals": "^17.0.0",
     "partysocket": "^1.1.10",
-    "prettier": "^3.7.4",
+    "prettier": "^3.8.0",
     "prettier-plugin-svelte": "^3.4.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "svelte": "^5.46.3",
     "tailwindcss": "^4.1.13",
     "vite": "^7.3.1",
-    "wrangler": "^4.59.1"
+    "wrangler": "^4.59.2"
   },
   "engines": {
     "node": "24.x"
