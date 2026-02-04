@@ -12,7 +12,7 @@
   "devDependencies": {
     "@fontsource-variable/archivo": "^5.2.8",
     "@fontsource/michroma": "^5.2.8",
-    "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
     "@iconify-json/logos": "^1.2.10",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify/tailwind": "^1.2.0",
@@ -25,7 +25,7 @@
     "bits-ui": "^2.15.5",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-config-turbo": "^2.8.2",
+    "eslint-config-turbo": "^2.8.3",
     "eslint-plugin-svelte": "^3.14.0",
     "globals": "^17.3.0",
     "prettier": "^3.8.1",
