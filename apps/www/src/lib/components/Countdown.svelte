@@ -26,7 +26,7 @@
       minutes = Math.floor((distance % HOUR) / MINUTE);
       seconds = Math.floor((distance % MINUTE) / SECOND);
 
-      setTimeout(handleCountdown, SECOND);
+      timer = setTimeout(handleCountdown, SECOND);
     }
   };
 

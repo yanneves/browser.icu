@@ -9,7 +9,6 @@ export async function GET({ cookies }) {
     throw error(401, "Invalid session");
   }
 
-  let replays = [];
   try {
     const sql = database();
     const data = await sql`
@@ -20,13 +19,13 @@ export async function GET({ cookies }) {
       ORDER BY id DESC
     `;
 
-    replays = data?.map(({ id, prompt, url }) => ({ id, prompt, url })) ?? [];
+    const replays =
+      data?.map(({ id, prompt, url }) => ({ id, prompt, url })) ?? [];
+    return new Response(JSON.stringify({ replays }));
   } catch (err) {
     console.error("Error querying database: ", err);
     throw error(500, "Error loading replays");
   }
-
-  return new Response(JSON.stringify({ replays }));
 }
 
 /** @type {import('./$types').RequestHandler} */
