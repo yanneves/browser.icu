@@ -13,7 +13,7 @@
     "@fontsource-variable/inter": "^5.2.8",
     "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
     "@iconify-json/logos": "^1.2.10",
-    "@iconify-json/lucide": "^1.2.98",
+    "@iconify-json/lucide": "^1.2.99",
     "@iconify/tailwind": "^1.2.0",
     "@sveltejs/adapter-cloudflare": "^7.2.8",
     "@sveltejs/kit": "^2.55.0",
