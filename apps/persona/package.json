@@ -25,7 +25,7 @@
     "bits-ui": "^2.16.5",
     "eslint": "^10.1.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-config-turbo": "^2.9.0",
+    "eslint-config-turbo": "^2.9.3",
     "eslint-plugin-svelte": "^3.16.0",
     "globals": "^17.4.0",
     "prettier": "^3.8.1",
@@ -35,7 +35,7 @@
     "tailwindcss": "^4.1.13",
     "three": "^0.183.1",
     "vite": "^7.3.1",
-    "wrangler": "^4.78.0"
+    "wrangler": "^4.79.0"
   },
   "engines": {
     "node": "24.x"
