@@ -30,7 +30,7 @@
     "eslint": "^10.1.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-config-turbo": "^2.9.3",
-    "eslint-plugin-svelte": "^3.16.0",
+    "eslint-plugin-svelte": "^3.17.0",
     "globals": "^17.4.0",
     "partysocket": "^1.1.16",
     "prettier": "^3.8.1",
