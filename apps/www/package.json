@@ -19,7 +19,7 @@
     "@sveltejs/kit": "^2.57.1",
     "@sveltejs/vite-plugin-svelte": "^7.0.0",
     "@tailwindcss/typography": "^0.5.19",
-    "@tailwindcss/vite": "^4.2.2",
+    "@tailwindcss/vite": "^4.2.4",
     "@types/eslint": "^9.6.1",
     "eslint": "^10.2.1",
     "eslint-config-prettier": "^10.1.8",
@@ -32,7 +32,7 @@
     "svelte": "^5.55.4",
     "tailwindcss": "^4.2.2",
     "vite": "^8.0.9",
-    "wrangler": "^4.84.0"
+    "wrangler": "^4.84.1"
   },
   "engines": {
     "node": "24.x"
