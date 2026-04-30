@@ -1,9 +1,0 @@
-[build]
-builder = "NIXPACKS"
-nixpacksConfigPath = "nixpacks.toml"
-
-[deploy]
-numReplicas = 2
-restartPolicyType = "ON_FAILURE"
-# healthcheckPath = "/health"
-# healthcheckTimeout = 30000
