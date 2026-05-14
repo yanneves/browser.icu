@@ -12,11 +12,11 @@
     "start": "tsx ."
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.95.2",
-    "@aws-sdk/client-s3": "^3.1045.0",
+    "@anthropic-ai/sdk": "^0.96.0",
+    "@aws-sdk/client-s3": "^3.1046.0",
     "pg": "^8.20.0",
     "playwright": "^1.60.0",
-    "tsx": "^4.21.0",
+    "tsx": "^4.22.0",
     "uuid": "^14.0.0",
     "ws": "^8.20.1"
   },
