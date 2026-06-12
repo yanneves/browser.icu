@@ -32,7 +32,7 @@
     "eslint-config-turbo": "^2.9.18",
     "eslint-plugin-svelte": "^3.19.0",
     "globals": "^17.6.0",
-    "partysocket": "^1.1.19",
+    "partysocket": "^1.2.0",
     "prettier": "^3.8.4",
     "prettier-plugin-svelte": "^4.1.0",
     "prettier-plugin-tailwindcss": "^0.8.0",
