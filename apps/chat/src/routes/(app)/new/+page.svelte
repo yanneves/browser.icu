@@ -202,8 +202,7 @@
       class="sr-only"
       tabindex="-1"
       value={prompt}
-      required
-    ></textarea>
+      required></textarea>
     <div
       class="hover:ring-blaze-300 bg-bg-100 text-text-400 has-focus:ring-blaze-300 relative flex w-full flex-col justify-between rounded-2xl shadow-xs ring-2 ring-transparent"
     >
