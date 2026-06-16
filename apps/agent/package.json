@@ -12,8 +12,8 @@
     "start": "tsx ."
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.104.1",
-    "@aws-sdk/client-s3": "^3.1068.0",
+    "@anthropic-ai/sdk": "^0.104.2",
+    "@aws-sdk/client-s3": "^3.1069.0",
     "pg": "^8.21.0",
     "playwright": "^1.61.0",
     "tsx": "^4.22.4",
