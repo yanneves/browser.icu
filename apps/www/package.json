@@ -15,8 +15,8 @@
     "@iconify-json/logos": "^1.2.11",
     "@iconify-json/lucide": "^1.2.113",
     "@iconify/tailwind": "^1.2.0",
-    "@sveltejs/adapter-cloudflare": "^7.2.8",
-    "@sveltejs/kit": "^2.65.1",
+    "@sveltejs/adapter-cloudflare": "^7.2.9",
+    "@sveltejs/kit": "^2.65.2",
     "@sveltejs/vite-plugin-svelte": "^7.1.2",
     "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.3.1",
@@ -32,7 +32,7 @@
     "svelte": "^5.56.3",
     "tailwindcss": "^4.2.2",
     "vite": "^8.0.16",
-    "wrangler": "^4.100.0"
+    "wrangler": "^4.101.0"
   },
   "engines": {
     "node": "24.x"
