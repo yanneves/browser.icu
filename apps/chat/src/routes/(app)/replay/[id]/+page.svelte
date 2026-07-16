@@ -128,7 +128,7 @@
       </li>
     {:else}
       <li class="flex size-6 items-center justify-center">
-        <i class="iconify svg-spinners--3-dots-move size-4 text-blaze-400"></i>
+        <i class="iconify svg-spinners--3-dots-move text-blaze-400 size-4"></i>
       </li>
     {/each}
   </ul>
