@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.61.1
+FROM mcr.microsoft.com/playwright:v1.62.0
 LABEL description="Playwright Server Container"
 
 # ==============================================================================
