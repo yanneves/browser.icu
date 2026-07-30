@@ -21,7 +21,7 @@
     "@iconify-json/svg-spinners": "^1.2.4",
     "@iconify/tailwind": "^1.2.0",
     "@sveltejs/adapter-cloudflare": "^7.2.9",
-    "@sveltejs/kit": "^2.70.1",
+    "@sveltejs/kit": "^2.70.2",
     "@sveltejs/vite-plugin-svelte": "^7.2.0",
     "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/typography": "^0.5.20",
@@ -38,7 +38,7 @@
     "prettier-plugin-tailwindcss": "^0.8.1",
     "svelte": "^5.56.8",
     "tailwindcss": "^4.2.2",
-    "vite": "^8.1.5",
+    "vite": "^8.2.0",
     "wrangler": "^4.115.0"
   },
   "engines": {
