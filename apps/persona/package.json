@@ -18,7 +18,7 @@
     "@iconify/tailwind": "^1.2.0",
     "@sveltejs/adapter-cloudflare": "^7.2.9",
     "@sveltejs/enhanced-img": "^0.11.0",
-    "@sveltejs/kit": "^2.70.1",
+    "@sveltejs/kit": "^2.70.2",
     "@sveltejs/vite-plugin-svelte": "^7.2.0",
     "@tailwindcss/vite": "^4.3.3",
     "@types/eslint": "^9.6.1",
@@ -34,7 +34,7 @@
     "svelte": "^5.56.8",
     "tailwindcss": "^4.2.2",
     "three": "^0.185.1",
-    "vite": "^8.1.5",
+    "vite": "^8.2.0",
     "wrangler": "^4.115.0"
   },
   "engines": {
