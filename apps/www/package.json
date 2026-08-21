@@ -16,14 +16,14 @@
     "@iconify-json/lucide": "^1.2.123",
     "@iconify/tailwind": "^1.2.0",
     "@sveltejs/adapter-cloudflare": "^7.2.9",
-    "@sveltejs/kit": "^2.70.2",
+    "@sveltejs/kit": "^2.70.3",
     "@sveltejs/vite-plugin-svelte": "^7.3.0",
     "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.3.3",
     "@types/eslint": "^9.6.1",
     "eslint": "^10.8.1",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-config-turbo": "^2.10.10",
+    "eslint-config-turbo": "^2.10.11",
     "eslint-plugin-svelte": "^3.23.0",
     "globals": "^17.11.0",
     "prettier": "^3.9.6",
@@ -32,7 +32,7 @@
     "svelte": "^5.56.9",
     "tailwindcss": "^4.2.2",
     "vite": "^8.2.1",
-    "wrangler": "^4.123.0"
+    "wrangler": "^4.124.0"
   },
   "engines": {
     "node": "24.x"
