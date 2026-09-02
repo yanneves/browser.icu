@@ -1,4 +1,5 @@
 <script>
+  import "@ambientcss/css";
   import { resolve } from "$app/paths";
   import { page } from "$app/state";
   import Shell from "$lib/components/Shell.svelte";
@@ -111,6 +112,14 @@
     };
   });
 </script>
+
+<!-- Film grain effect -->
+<aside class="pointer-events-none absolute inset-0 opacity-35">
+  <div
+    class="ambient amb-surface amb-mat-blasted amb-elevation-1 fixed h-full"
+    style="--amb-grain-amount: 1.5;"
+  ></div>
+</aside>
 
 <Shell>
   {#snippet header()}
@@ -239,3 +248,18 @@
     {@render children()}
   {/snippet}
 </Shell>
+
+<style>
+  :root {
+    --amb-light-x: -1;
+    --amb-light-y: -1;
+    --amb-key-light-intensity: 0.92;
+    --amb-fill-light-intensity: 0.7;
+    --amb-light-hue: 210;
+    --amb-light-saturation: 20%;
+    --amb-highlight-color: var(--color-blaze-400);
+    --amb-lume-hue: 190;
+    --amb-albedo: hsl(210 20% 10%);
+    --amb-shade: 0.35;
+  }
+</style>
