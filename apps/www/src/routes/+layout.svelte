@@ -19,7 +19,7 @@
 <aside class="pointer-events-none absolute inset-0 opacity-35">
   <div
     class="ambient amb-surface amb-mat-blasted amb-elevation-1 fixed h-full"
-    style="--amb-grain-amount: 2;"
+    style="--amb-grain-amount: 1.5;"
   ></div>
 </aside>
 
@@ -40,7 +40,7 @@
     --amb-light-x: -1;
     --amb-light-y: -1;
     --amb-key-light-intensity: 0.92;
-    --amb-fill-light-intensity: 0.55;
+    --amb-fill-light-intensity: 0.7;
     --amb-light-hue: 210;
     --amb-light-saturation: 20%;
     --amb-highlight-color: var(--color-blaze-400);

@@ -1,5 +1,4 @@
 <script>
-  import FilmGrain from "$lib/components/FilmGrain.svelte";
   import { sineInOut } from "svelte/easing";
 
   let { header, nav, main } = $props();
@@ -19,10 +18,6 @@
     };
   }
 </script>
-
-<FilmGrain>
-  <div class="bg-bg-50 h-full"></div>
-</FilmGrain>
 
 {#snippet sidebar()}
   <div
