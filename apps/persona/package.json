@@ -23,7 +23,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "@types/eslint": "^9.6.1",
     "bits-ui": "^2.19.0",
-    "eslint": "^10.9.1",
+    "eslint": "^10.10.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-config-turbo": "^2.10.12",
     "eslint-plugin-svelte": "^3.23.0",
@@ -35,7 +35,7 @@
     "tailwindcss": "^4.2.2",
     "three": "^0.185.1",
     "vite": "^8.2.2",
-    "wrangler": "^4.127.1"
+    "wrangler": "^4.129.0"
   },
   "engines": {
     "node": "24.x"
