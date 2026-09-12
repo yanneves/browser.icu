@@ -36,7 +36,7 @@ Branches should use a prefix matching the type of work:
 - **`chore/<name>`** — For routine tasks that don’t add features or fix bugs (e.g., dependency updates, build configs).
 - **`docs/<name>`** — For updating or creating documentation.
 - **`refactor/<name>`** — For code refactoring that neither fixes a bug nor adds a feature.
-- **`style/<name>`** — For stylistic changes (e.g., formatting, whitespace, missing semicolons).
+- **`style/<name>`** — For code style changes (e.g., formatting, whitespace, missing semicolons).
 - **`test/<name>`** — For adding or updating tests.
 - **`perf/<name>`** — For performance improvements.
 
@@ -85,7 +85,7 @@ Commit messages must follow the **Conventional Commits** format:
 - `fix(apps/browser): resolve crash on startup`
 - `chore(apps/persona): remove unused resources section`
 - `refactor(apps/agent): simplify request handler`
-- `style(apps/www): apply consistent heading sizes`
+- `style(apps/www): fix indentation and remove trailing whitespace`
 - `test(apps/chat): add unit tests for message parsing`
 - `perf(apps/browser): improve tab rendering speed`
 
