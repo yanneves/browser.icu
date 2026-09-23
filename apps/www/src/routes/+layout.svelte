@@ -2,7 +2,6 @@
   import "../app.css";
   import "@ambientcss/css";
   import { browser } from "$app/environment";
-  import { PUBLIC_FATHOM_KEY } from "$env/static/public";
 
   const { children } = $props();
 </script>
@@ -29,7 +28,6 @@
   <script
     src="https://cdn.usefathom.com/script.js"
     data-excluded-domains="localhost"
-    data-site={PUBLIC_FATHOM_KEY}
     data-spa="auto"
     defer
   ></script>
