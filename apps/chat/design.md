@@ -2,7 +2,7 @@
 version: alpha
 name: Browser.icu
 description: >
-  Dark chat-based browser assistant. A person types a task in plain language,
+  A dark-theme chat-based browser assistant. A person types a task in plain language,
   watches an agent work in a real browser, and receives a summary plus saved files.
 
 colors:
@@ -155,9 +155,9 @@ Control the web's most powerful autonomous browser agents.
 
 ## Overview
 
-Browser.icu is a dark, calm, chat-based browser assistant. A person types a task in plain language, watches an agent work in a real browser, and receives a summary plus saved files.
+Browser.icu is a calm, dark theme chat-based browser assistant. A person types a task in plain language, watches an agent work in a real browser, and receives a summary plus saved files.
 
-The mood is quiet and confident. Roomy content areas, clear gaps between sections, sharp structural edges, and one bright orange accent help operators hand over web work while remaining in control.
+The mood is quiet, calm, and sophisticated. Roomy content areas, clear gaps between sections, sharp structural edges, and one bright orange accent help operators hand over web work while remaining in control.
 
 Orange is reserved for primary actions, links, and active interactive states. It should not be used as general decoration.
 
@@ -373,7 +373,7 @@ A dimmed full-screen overlay with a centered popup.
 
 It contains:
 
-- Dark brand banner
+- Dark-theme brand banner
 - Approved orange illustration
 - Browser.icu logo
 - Main “Continue” button
