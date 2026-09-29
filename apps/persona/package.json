@@ -35,7 +35,7 @@
     "tailwindcss": "^4.2.2",
     "three": "^0.186.1",
     "vite": "^8.3.1",
-    "wrangler": "^4.140.0"
+    "wrangler": "^4.141.0"
   },
   "engines": {
     "node": "24.x"
