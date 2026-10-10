@@ -5,7 +5,7 @@
   /**
    * @typedef {Object} Props
    * @property {import('svelte').Snippet} [children] - The button content.
-   * @property {'normal' | 'secondary' | 'destructive' | 'ghost' | 'outline alt' | 'outline' | 'text'} [variant] - The visual style of the button.
+   * @property {'normal' | 'destructive' | 'ghost' | 'outline alt' | 'outline' | 'text'} [variant] - The visual style of the button.
    * @property {string} [href] - An optional URL to make the button behave as a link.
    * @property {'normal' | 'sm' | 'text' | 'text md' | 'text sm' | 'sidebar'} [size] - The size and padding of the button.
    * @property {string} [class] - Additional CSS classes.
