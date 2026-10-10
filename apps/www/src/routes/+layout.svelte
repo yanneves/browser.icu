@@ -1,8 +1,10 @@
 <script>
   import "../app.css";
-  import "@ambientcss/css";
   import { browser } from "$app/environment";
   import { PUBLIC_FATHOM_KEY } from "$env/static/public";
+  import "@fontsource-variable/inter";
+  import "@fontsource-variable/jetbrains-mono";
+  import "@fontsource/michroma";
 
   const { children } = $props();
 </script>
@@ -11,41 +13,46 @@
   <title>Browser.icu</title>
   <meta
     name="description"
-    content="Control the web's most powerful autonomous browser agents"
+    content="Control the web's most powerful browser agents"
   />
 </svelte:head>
 
-<!-- Film grain effect -->
-<aside class="pointer-events-none absolute inset-0 opacity-35">
-  <div
-    class="ambient amb-surface amb-mat-blasted amb-elevation-1 fixed h-full"
-    style="--amb-grain-amount: 1.5;"
-  ></div>
-</aside>
+<div class="max-w-center-content relative mx-auto">
+  <div class="hero-gradient"></div>
+</div>
 
-{@render children()}
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<div class="relative">
+  {@render children()}
+</div>
 
 {#if browser}
   <script
     src="https://cdn.usefathom.com/script.js"
-    data-excluded-domains="localhost"
     data-site={PUBLIC_FATHOM_KEY}
+    data-excluded-domains="localhost"
     data-spa="auto"
     defer
   ></script>
 {/if}
 
 <style>
-  :root {
-    --amb-light-x: -1;
-    --amb-light-y: -1;
-    --amb-key-light-intensity: 0.92;
-    --amb-fill-light-intensity: 0.7;
-    --amb-light-hue: 210;
-    --amb-light-saturation: 20%;
-    --amb-highlight-color: var(--color-blaze-400);
-    --amb-lume-hue: 190;
-    --amb-albedo: hsl(210 20% 10%);
-    --amb-shade: 0.35;
+  .hero-gradient {
+    translate: 40% -20%;
+    opacity: 0.15;
+    background-image: radial-gradient(
+      circle,
+      color-mix(in srgb, var(--color-primary) 40%, transparent) 0%,
+      transparent 60%,
+      transparent 100%
+    );
+    z-index: -100;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-height: 900px;
+    min-width: 800px;
   }
 </style>

@@ -1,24 +1,65 @@
 @import "tailwindcss";
 
 @plugin "@tailwindcss/typography";
-@plugin "../tailwind.icons.js";
+@plugin "@iconify/tailwind4" {
+  prefixes: "lucide", "tabler";
+  scale: 1.2;
+}
 
 @theme {
-  --font-logo: "Inter Variable", sans-serif;
+  --font-display: "Inter Variable", sans-serif;
+  --font-mono: "JetBrains Mono Variable", monospace;
+  --font-heading: "Michroma", sans-serif;
 
-  --color-blaze-50: hsl(45 100% 95%);
-  --color-blaze-100: hsl(45 100% 90%);
-  --color-blaze-200: hsl(35 100% 80%);
-  --color-blaze-300: hsl(30 100% 70%);
-  --color-blaze-400: hsl(25 90% 60%);
-  --color-blaze-500: hsl(15 86% 50%);
-  --color-blaze-600: hsl(10 80% 40%);
-  --color-blaze-700: hsl(5 75% 30%);
-  --color-blaze-800: hsl(0 70% 20%);
-  --color-blaze-900: hsl(0 60% 15%);
-  --color-blaze-950: hsl(0 50% 10%);
+  --color-primary: #f0500f;
+  --color-primary-foreground: #222327;
+  --color-destructive: #e21d1d;
+
+  --color-foreground: #bcbdc3;
+  --color-foreground-alt: #8e92a3;
+
+  --color-background: #222327;
+
+  --color-card: #28292e;
+  --color-stroke: #41444a;
+
+  --text-xxs: 0.65rem;
+
+  --max-width-center-content: 55rem;
+
+  --default-transition-duration: 0.1s;
+}
+
+body {
+  @apply bg-background text-foreground font-display;
+  overflow-x: clip;
+}
+
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0.4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  mix-blend-mode: overlay;
 }
 
 :root {
   color-scheme: dark;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) var(--color-background);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border: 2px solid var(--color-background);
 }
