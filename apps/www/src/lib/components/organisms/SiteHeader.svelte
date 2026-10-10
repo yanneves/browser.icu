@@ -35,7 +35,7 @@
         <Button
           href="https://github.com/yanneves/browser.icu"
           size="sm"
-          aria-label="Deploy"
+          aria-label="GitHub"
           ><span class="icon-[lucide--github]"></span></Button
         >
       </span>
