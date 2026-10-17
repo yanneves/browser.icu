@@ -84,14 +84,14 @@
 
   <div class="border-stroke/50 border-t">
     <div
-      class="max-w-center-content mx-auto flex justify-center px-5 py-6 min-[55rem]:px-0"
+      class="max-w-center-content mx-auto flex min-w-0 justify-center px-5 py-6 min-[55rem]:px-0"
     >
       <button
         type="button"
         onclick={copyMint}
         title={copying ? "Copied!" : "Copy token address"}
         aria-label="Copy token mint address"
-        class=" text-foreground-alt/60 hover:text-foreground-alt flex max-w-full cursor-pointer items-center gap-2.5 text-center font-mono text-[11px] tracking-[0.25em] transition-colors sm:text-xs sm:tracking-[0.33em]"
+        class=" text-foreground-alt/60 hover:text-foreground-alt flex max-w-full min-w-0 cursor-pointer items-center gap-2.5 text-center font-mono text-[11px] tracking-[0.25em] transition-colors sm:text-xs sm:tracking-[0.33em]"
       >
         <span
           class="size-3.5 shrink-0 transition-transform {copying

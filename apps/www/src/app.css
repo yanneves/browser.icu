@@ -30,9 +30,13 @@
   --default-transition-duration: 0.1s;
 }
 
+html,
+body {
+  overflow-x: clip;
+}
+
 body {
   @apply bg-background text-foreground font-display;
-  overflow-x: clip;
 }
 
 .grain-overlay {
