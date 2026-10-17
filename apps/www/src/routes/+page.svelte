@@ -63,7 +63,7 @@
       </div>
     </div>
   </section>
-  <section class="overflow-x-clip bg-card py-14 sm:py-22">
+  <section class="bg-card overflow-x-clip py-14 sm:py-22">
     <div
       class="max-w-center-content mx-auto flex w-full flex-col gap-8 px-5 min-[55rem]:px-0"
     >
