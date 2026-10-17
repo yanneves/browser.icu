@@ -63,7 +63,7 @@
       </div>
     </div>
   </section>
-  <section class="bg-card py-14 sm:py-22">
+  <section class="overflow-x-clip bg-card py-14 sm:py-22">
     <div
       class="max-w-center-content mx-auto flex w-full flex-col gap-8 px-5 min-[55rem]:px-0"
     >
@@ -95,7 +95,7 @@
           <div>
             <div>
               <div class="grid min-w-0 grid-cols-1 sm:grid-cols-[auto_30%]">
-                <div class="min-w-0 px-5 py-2">
+                <div class="min-w-0 overflow-hidden px-5 py-2">
                   <span
                     class="text-xxs text-foreground-alt font-mono tracking-widest"
                     >BROWSER LOG</span
@@ -128,14 +128,18 @@
                             {/if}
                           </td>
                           <td
-                            class="max-w-40 overflow-clip text-nowrap text-ellipsis"
+                            class="max-w-40 overflow-hidden text-nowrap text-ellipsis"
                           >
                             {#if entry.status === "complete"}
-                              <span class="text-foreground-alt"
+                              <span
+                                class="text-foreground-alt block overflow-hidden text-ellipsis whitespace-nowrap"
                                 >{entry.log}</span
                               >
                             {:else}
-                              {entry.log}
+                              <span
+                                class="block overflow-hidden text-ellipsis whitespace-nowrap"
+                                >{entry.log}</span
+                              >
                             {/if}
                           </td>
                         </tr>
@@ -176,7 +180,7 @@
                     class="flex flex-col items-center justify-center space-y-4 pt-3"
                   >
                     <div
-                      class="bg-primary/5 border-primary/20 shadow-primary/10 grid w-67 shrink-0 translate-x-2 grid-cols-[18%_auto] border shadow-lg"
+                      class="bg-primary/5 border-primary/20 shadow-primary/10 grid w-full max-w-67 shrink-0 translate-x-2 grid-cols-[18%_auto] border shadow-lg"
                     >
                       <div
                         class="bg-primary/10 border-r-primary/20 flex items-center justify-center border-r"
@@ -193,7 +197,7 @@
                       </div>
                     </div>
                     <div
-                      class="file bg-primary/5 border-primary/20 grid w-67 shrink-0 -translate-x-2 grid-cols-[18%_auto] border opacity-70"
+                      class="file bg-primary/5 border-primary/20 grid w-full max-w-67 shrink-0 -translate-x-2 grid-cols-[18%_auto] border opacity-70"
                     >
                       <div
                         class="bg-primary/10 border-r-primary/20 flex items-center justify-center border-r"
@@ -233,7 +237,7 @@
       </div>
     </div>
   </section>
-  <section class="py-14 sm:py-22">
+  <section class="overflow-x-clip py-14 sm:py-22">
     <div
       class="max-w-center-content mx-auto gap-8 px-5 text-left sm:flex-row sm:items-center sm:justify-between min-[55rem]:px-0"
     >
