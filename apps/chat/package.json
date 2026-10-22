@@ -17,7 +17,7 @@
     "@ambientcss/css": "^3.1.0",
     "@fontsource-variable/inter": "^5.3.0",
     "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
-    "@iconify-json/lucide": "^1.2.145",
+    "@iconify-json/lucide": "^1.2.146",
     "@iconify-json/material-symbols": "^1.2.95",
     "@iconify-json/svg-spinners": "^1.2.4",
     "@iconify/tailwind": "^1.2.0",
@@ -40,7 +40,7 @@
     "svelte": "^5.57.2",
     "tailwindcss": "^4.2.2",
     "vite": "^8.3.4",
-    "wrangler": "^4.151.1"
+    "wrangler": "^4.151.2"
   },
   "engines": {
     "node": "24.x"
