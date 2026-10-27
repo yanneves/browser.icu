@@ -22,10 +22,10 @@
     "@sveltejs/vite-plugin-svelte": "^7.3.1",
     "@tailwindcss/vite": "^4.3.3",
     "@types/eslint": "^9.6.1",
-    "bits-ui": "^2.19.5",
+    "bits-ui": "^2.20.2",
     "eslint": "^10.13.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-config-turbo": "^2.11.9",
+    "eslint-config-turbo": "^2.11.10",
     "eslint-plugin-svelte": "^3.23.1",
     "globals": "^17.13.0",
     "prettier": "^3.9.10",
@@ -34,8 +34,8 @@
     "svelte": "^5.57.2",
     "tailwindcss": "^4.2.2",
     "three": "^0.186.1",
-    "vite": "^8.3.4",
-    "wrangler": "^4.151.3"
+    "vite": "^8.3.5",
+    "wrangler": "^4.152.0"
   },
   "engines": {
     "node": "24.x"
