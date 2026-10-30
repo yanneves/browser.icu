@@ -53,7 +53,7 @@ body {
 :root {
   color-scheme: dark;
   scrollbar-width: thin;
-  scrollbar-color: var(--color-primary) var(--color-background);
+  scrollbar-color: var(--color-stroke) var(--color-background);
 }
 
 ::-webkit-scrollbar {
@@ -64,6 +64,10 @@ body {
   background: var(--color-background);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-primary);
+  background: var(--color-stroke);
   border: 2px solid var(--color-background);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-foreground-alt);
 }
