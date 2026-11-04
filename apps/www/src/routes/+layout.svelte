@@ -5,6 +5,7 @@
   import "@fontsource-variable/inter";
   import "@fontsource-variable/jetbrains-mono";
   import "@fontsource/michroma";
+  import "@fontsource-variable/syne";
 
   const { children } = $props();
 </script>

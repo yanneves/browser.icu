@@ -40,7 +40,7 @@
           class="bg-primary/10 pointer-events-none absolute top-3/4 left-65 -z-10 hidden h-105 w-105 translate-x-65 -translate-y-3/4 rounded-full opacity-40 blur-3xl sm:block"
         ></div>
         <h1
-          class="font-heading text-[1.75rem] leading-[1.2] font-semibold sm:text-3xl sm:leading-tight"
+          class="font-brand text-[1.75rem] leading-[1.2] font-semibold tracking-tight sm:text-4xl sm:leading-tight"
         >
           Control The Web's Most Powerful <span class="text-primary"
             >Browser Agents</span
@@ -68,7 +68,9 @@
       class="max-w-center-content mx-auto flex w-full flex-col gap-8 px-5 min-[55rem]:px-0"
     >
       <div class="flex flex-col gap-3.5 pb-6 sm:pb-12">
-        <h2 class="font-heading text-2xl font-semibold sm:text-2xl">
+        <h2
+          class="font-brand text-2xl font-semibold tracking-tight sm:text-3xl"
+        >
           Give Browser A Mission
         </h2>
         <p>Describe the goal. Watch it work. Get things done.</p>
@@ -243,7 +245,7 @@
     >
       <div class="flex flex-col items-start gap-3.5">
         <h2
-          class="font-heading w-full text-2xl font-semibold text-balance sm:max-w-130 sm:text-2xl"
+          class="font-brand w-full text-2xl font-semibold tracking-tight text-balance sm:max-w-130 sm:text-3xl"
         >
           Ready To Put Browser To Work?
         </h2>
