@@ -152,4 +152,7 @@ package
 # Turborepo task cache
 .turbo
 
+# Wrangler local state (workerd SQLite, dev sessions)
+.wrangler/
+
 # End of https://www.toptal.com/developers/gitignore/api/node,turbo,svelte
