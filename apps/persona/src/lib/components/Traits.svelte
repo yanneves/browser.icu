@@ -284,13 +284,14 @@
     </p>
     <ul class="mt-4 text-lg tracking-tight">
       <li>
-        <span class="text-foreground-alt font-michroma mr-1 italic">(dice)</span
-        > traits can be randomly generated on use
+        <span class="text-foreground-alt font-michroma mr-1 italic">
+          (dice)
+        </span> traits can be randomly generated on use
       </li>
       <li>
-        <span class="text-foreground-alt font-michroma mr-1 italic"
-          >(range)</span
-        > traits can be set to a range of values
+        <span class="text-foreground-alt font-michroma mr-1 italic">
+          (range)
+        </span> traits can be set to a range of values
       </li>
     </ul>
 
@@ -307,9 +308,9 @@
             alt={`Current Persona: ${current_persona}`}
             src={active_persona_data.avatar_img}
           />
-          <span class="text-primary font-michroma flex-1 text-left text-lg"
-            >{current_persona}</span
-          >
+          <span class="text-primary font-michroma flex-1 text-left text-lg">
+            {current_persona}
+          </span>
           <i
             class={[
               "iconify text-primary size-5",
@@ -335,8 +336,9 @@
                     alt={`Switch to ${persona.identity.Name}`}
                     src={persona.avatar_img}
                   />
-                  <span class="font-michroma px-4">{persona.identity.Name}</span
-                  >
+                  <span class="font-michroma px-4">
+                    {persona.identity.Name}
+                  </span>
                 </button>
               {/if}
             {/each}

@@ -80,23 +80,27 @@
                 <th
                   scope="col"
                   class="px-2 py-3.5 text-left text-sm font-semibold whitespace-nowrap text-zinc-100"
-                  >Submitted</th
                 >
+                  Submitted
+                </th>
                 <th
                   scope="col"
                   class="w-[16ch] py-3.5 pr-3 pl-4 text-left text-sm font-semibold whitespace-nowrap text-zinc-100 sm:pl-0"
-                  >Twitter</th
                 >
+                  Twitter
+                </th>
                 <th
                   scope="col"
                   class="px-2 py-3.5 text-left text-sm font-semibold whitespace-nowrap text-zinc-100"
-                  >Wallet address</th
                 >
+                  Wallet address
+                </th>
                 <th
                   scope="col"
                   class="px-2 py-3.5 text-left text-sm font-semibold whitespace-nowrap text-zinc-100"
-                  >Allocation</th
                 >
+                  Allocation
+                </th>
                 <th
                   scope="col"
                   class="px-2 py-3.5 text-left text-sm font-semibold whitespace-nowrap text-zinc-100"
@@ -118,22 +122,25 @@
                       class:lucide--square-x={review.pass === false}
                     ></i>
                   </td>
-                  <td class="px-2 py-2 text-sm whitespace-nowrap text-zinc-400"
-                    >{formatDateTime(created)}</td
-                  >
+                  <td class="px-2 py-2 text-sm whitespace-nowrap text-zinc-400">
+                    {formatDateTime(created)}
+                  </td>
                   <td
                     class="py-2 pr-3 pl-4 text-sm whitespace-nowrap text-zinc-100 sm:pl-0"
-                    >{handle}</td
                   >
+                    {handle}
+                  </td>
                   <td
                     class="px-2 py-2 text-sm font-medium whitespace-nowrap text-zinc-400"
-                    >{wallet}</td
                   >
+                    {wallet}
+                  </td>
                   <td
                     class="flex items-center px-2 py-2 text-sm whitespace-nowrap text-zinc-400"
-                    >0.245 <i class="iconify-color token-branded--solana size-4"
-                    ></i></td
                   >
+                    0.245 <i class="iconify-color token-branded--solana size-4"
+                    ></i>
+                  </td>
                   <td class="px-2 py-2 text-sm whitespace-nowrap text-zinc-400">
                     {review.note || "Awaiting review."}
                   </td>

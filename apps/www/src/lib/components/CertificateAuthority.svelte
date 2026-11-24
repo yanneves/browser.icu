@@ -17,20 +17,25 @@
 <p class="relative flex items-center gap-x-1 text-lg text-zinc-300">
   <small
     class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 transition-opacity"
-    class:opacity-100={copying}>Copied!</small
+    class:opacity-100={copying}
   >
+    Copied!
+  </small>
   <i class="iconify lucide--rocket size-5 motion-safe:animate-pulse"></i>
   <button
     type="button"
     class="focus:ring-blaze-300 sr-only cursor-pointer rounded-md font-mono focus:ring-1 focus:outline-hidden sm:not-sr-only sm:px-1"
     data-addr={mint}
-    onclick={copyAddress}>{mint}</button
+    onclick={copyAddress}
   >
+    {mint}
+  </button>
   <button
     type="button"
     data-addr={mint}
     class="cursor-pointer rounded-md px-1 focus:outline-hidden sm:hidden"
     onclick={copyAddress}
-    >{mint.substring(0, 5)}...{mint.substring(mint.length - 4, mint.length)}
+  >
+    {mint.substring(0, 5)}...{mint.substring(mint.length - 4, mint.length)}
   </button>
 </p>

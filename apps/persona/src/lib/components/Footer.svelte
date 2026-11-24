@@ -19,9 +19,9 @@
         </div>
       </a>
       <p class="text-foreground-darker text-sm">
-        Powered by <a class="text-foreground" href="https://gadabout.ai"
-          >Gadabout.ai</a
-        > | 2025
+        Powered by <a class="text-foreground" href="https://gadabout.ai">
+          Gadabout.ai
+        </a> | 2025
       </p>
     </div>
     <div class="flex flex-col gap-2 sm:items-end">

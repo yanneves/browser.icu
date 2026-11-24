@@ -42,9 +42,9 @@
         <h1
           class="font-brand text-[1.75rem] leading-[1.2] font-semibold tracking-tight sm:text-4xl sm:leading-tight"
         >
-          Control The Web's Most Powerful <span class="text-primary"
-            >Browser Agents</span
-          >
+          Control The Web's Most Powerful <span class="text-primary">
+            Browser Agents
+          </span>
         </h1>
         <p class="max-w-full leading-relaxed text-pretty sm:max-w-[90%]">
           Supercharged chat-based task solving. An AI agent controls a real
@@ -55,10 +55,11 @@
             href="/discord"
             variant="outline alt"
             onclick={() => trackEvent("Joined Discord")}
-            ><span class="icon-[tabler--brand-discord-filled]"></span><span
-              >Join Discord</span
-            ></Button
           >
+            <span class="icon-[tabler--brand-discord-filled]"></span><span>
+              Join Discord
+            </span>
+          </Button>
         </div>
       </div>
     </div>
@@ -79,8 +80,9 @@
         <div class="border-stroke relative border">
           <span
             class="bg-card text-primary absolute -top-3 left-3 px-3 font-mono text-sm font-semibold italic"
-            >PROMPT</span
           >
+            PROMPT
+          </span>
           <div class="flex h-full items-center justify-center px-5 py-2">
             <p class="text-xs leading-6 text-pretty">
               “Navigate to hubspot.com/pricing and break down the tiers. Compare
@@ -92,16 +94,18 @@
         <div class="border-stroke relative border">
           <span
             class="bg-card text-primary absolute -top-3 left-3 rounded-full px-3 font-mono text-sm font-semibold italic"
-            >OBSERVE</span
           >
+            OBSERVE
+          </span>
           <div>
             <div>
               <div class="grid min-w-0 grid-cols-1 sm:grid-cols-[auto_30%]">
                 <div class="min-w-0 overflow-hidden px-5 py-2">
                   <span
                     class="text-xxs text-foreground-alt font-mono tracking-widest"
-                    >BROWSER LOG</span
                   >
+                    BROWSER LOG
+                  </span>
                   <table class="w-full border-separate border-spacing-y-1">
                     <tbody>
                       {#each [{ timestamp: "00:00", status: "complete", log: "Open HubSpot's current pricing page to inspect its structure." }, { timestamp: "00:36", status: "complete", log: "Parse pricing page HTML to extract detailed tier text." }, { timestamp: "01:14", status: "complete", log: "Analyze HubSpot plan structures and identify starter features." }, { timestamp: "01:30", status: "ongoing", log: "Evaluating tier options for a five-person team..." }] as entry (entry.timestamp)}
@@ -112,8 +116,9 @@
                             {#if entry.status === "complete"}
                               <span class="opacity-60">{entry.timestamp}</span>
                             {:else}
-                              <span class="text-primary">{entry.timestamp}</span
-                              >
+                              <span class="text-primary">
+                                {entry.timestamp}
+                              </span>
                             {/if}
                           </td>
                           <td
@@ -135,13 +140,15 @@
                             {#if entry.status === "complete"}
                               <span
                                 class="text-foreground-alt block overflow-hidden text-ellipsis whitespace-nowrap"
-                                >{entry.log}</span
                               >
+                                {entry.log}
+                              </span>
                             {:else}
                               <span
                                 class="block overflow-hidden text-ellipsis whitespace-nowrap"
-                                >{entry.log}</span
                               >
+                                {entry.log}
+                              </span>
                             {/if}
                           </td>
                         </tr>
@@ -161,8 +168,9 @@
         >
           <span
             class="bg-primary text-primary-foreground absolute -top-3 left-3 z-10 px-3 font-mono text-sm font-semibold italic"
-            >USE</span
           >
+            USE
+          </span>
           <div>
             <div>
               <div class="grid min-w-0 grid-cols-1 sm:grid-cols-[35%_auto]">
@@ -262,10 +270,11 @@
             href="/discord"
             onclick={() => trackEvent("Joined Discord")}
             class="w-full shrink-0 justify-center sm:w-auto"
-            ><span>Join Discord</span><span
-              class="icon-[tabler--brand-discord-filled]"
-            ></span></Button
           >
+            <span>Join Discord</span><span
+              class="icon-[tabler--brand-discord-filled]"
+            ></span>
+          </Button>
         </div>
       </div>
     </div>

@@ -126,8 +126,9 @@
     <button
       type="button"
       class="bg-blaze-400 ml-auto flex cursor-pointer items-center rounded-full px-8 py-2 text-black ring-4 ring-transparent hover:ring-black focus:ring-black focus:outline-hidden"
-      >Connect</button
     >
+      Connect
+    </button>
   {/snippet}
 
   {#snippet nav()}
@@ -142,8 +143,10 @@
               onclick={() => {
                 editMode = false;
                 replaySelection.clear();
-              }}>Back</button
+              }}
             >
+              Back
+            </button>
             {#if replaySelection.size}
               <button
                 type="button"
@@ -151,16 +154,19 @@
                 class:text-blaze-300={viewArchived}
                 class:text-blaze-700={!viewArchived}
                 onclick={() => archiveReplays(replaySelection)}
-                >{viewArchived ? "Restore" : "Archive"} ({replaySelection.size})</button
               >
+                {viewArchived ? "Restore" : "Archive"} ({replaySelection.size})
+              </button>
             {/if}
           {:else}
             {#if viewArchived}
               <button
                 type="button"
                 class="focus:ring-blaze-300 text-blaze-300 cursor-pointer rounded-lg p-2 text-xs focus:ring-2 focus:outline-hidden"
-                onclick={() => (viewArchived = false)}>Back</button
+                onclick={() => (viewArchived = false)}
               >
+                Back
+              </button>
             {:else}
               <button
                 type="button"
@@ -214,8 +220,9 @@
                       <time
                         datetime={date.toISOString()}
                         class="ml-auto shrink-0 text-xs text-gray-400"
-                        >{created}</time
                       >
+                        {created}
+                      </time>
                     </span>
                     <span class="line-clamp-2 text-xs">{prompt}</span>
                   </span>

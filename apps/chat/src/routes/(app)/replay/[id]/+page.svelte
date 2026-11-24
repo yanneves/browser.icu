@@ -42,9 +42,9 @@
           class="bg-bg-50 mx-auto flex min-w-0 grow items-center gap-x-2 rounded-lg border border-gray-300 px-4 py-1"
         >
           <i class="iconify lucide--shield size-5 text-gray-500"></i>
-          <span class="cursor-default truncate text-gray-500"
-            >{data?.replay.url}</span
-          >
+          <span class="cursor-default truncate text-gray-500">
+            {data?.replay.url}
+          </span>
         </div>
         <button
           type="button"
