@@ -26,18 +26,18 @@
     </div>
     <div class="nav-actions flex shrink-0 items-center gap-2">
       <span class="hidden min-[480px]:inline">
-        <Button href="https://github.com/yanneves/browser.icu"
-          ><span class="icon-[lucide--github]"></span><span>GitHub</span
-          ></Button
-        >
+        <Button href="https://github.com/yanneves/browser.icu">
+          <span class="icon-[lucide--github]"></span><span>GitHub</span>
+        </Button>
       </span>
       <span class="min-[480px]:hidden">
         <Button
           href="https://github.com/yanneves/browser.icu"
           size="sm"
           aria-label="GitHub"
-          ><span class="icon-[lucide--github]"></span></Button
         >
+          <span class="icon-[lucide--github]"></span>
+        </Button>
       </span>
     </div>
   </nav>

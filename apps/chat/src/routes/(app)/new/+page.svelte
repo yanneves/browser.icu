@@ -221,8 +221,10 @@
         >
           <small
             class="absolute -top-6 left-1/2 -translate-x-1/2 opacity-0 transition-opacity"
-            class:opacity-100={soonAttach}>Soon&trade;</small
+            class:opacity-100={soonAttach}
           >
+            Soon&trade;
+          </small>
           <i class="iconify lucide--circle-help size-6"></i>
           <span class="sr-only">Get help</span>
         </button>
@@ -237,8 +239,10 @@
         >
           <small
             class="absolute -top-6 left-1/2 -translate-x-1/2 opacity-0 transition-opacity"
-            class:opacity-100={soonDictate}>Soon&trade;</small
+            class:opacity-100={soonDictate}
           >
+            Soon&trade;
+          </small>
           <i class="iconify lucide--mic size-6"></i>
           <span class="sr-only">Dictate</span>
         </button>

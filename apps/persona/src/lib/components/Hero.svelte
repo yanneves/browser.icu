@@ -24,8 +24,9 @@
         Solana's first <span class="rgb-shift italic">AI NFTs</span> with
         utility<span
           class="text-foreground-alt font-light tracking-widest sm:text-4xl lg:text-5xl"
-          >::::::</span
         >
+          ::::::
+        </span>
       </h1>
       <p class="text-foreground-alt text-foreground/60 text-xl">
         Help AI Agent interns become more human, and earn a share of their

@@ -31,9 +31,9 @@
         <Logo class="h-6 w-auto" />
       </a>
       <p class="text-foreground-alt text-sm tracking-tight">
-        Powered by <a href="https://gadabout.ai/" class="text-foreground"
-          >Gadabout.ai</a
-        >
+        Powered by <a href="https://gadabout.ai/" class="text-foreground">
+          Gadabout.ai
+        </a>
         | {year}
       </p>
     </div>
@@ -72,13 +72,17 @@
     >
       <a
         href={resolve("/tokenomics")}
-        class="hover:text-foreground transition-colors">Tokenomics</a
+        class="hover:text-foreground transition-colors"
       >
+        Tokenomics
+      </a>
       <a
         href="https://github.com/yanneves/browser.icu/blob/main/LICENSE"
         rel="external noopener noreferrer"
-        class="hover:text-foreground transition-colors">MIT License</a
+        class="hover:text-foreground transition-colors"
       >
+        MIT License
+      </a>
     </nav>
   </div>
 

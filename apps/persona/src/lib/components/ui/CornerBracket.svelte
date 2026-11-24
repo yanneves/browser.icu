@@ -12,10 +12,11 @@
   width="24"
   height="24"
   viewBox="0 0 24 24"
-  ><path
+>
+  <path
     fill="none"
     stroke="currentColor"
     stroke-width="2"
     d={position === "top-left" ? "M16 4H4v12" : "M8 20h12V8"}
-  /></svg
->
+  />
+</svg>
